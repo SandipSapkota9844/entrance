@@ -9,7 +9,7 @@
   <title> Admin Login</title>
   <?php include 'include/scripts.php'; ?>
 </head>
-<?php include 'loginprocess.php'; ?>
+
 
 <body>
 
