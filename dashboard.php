@@ -1,116 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Document</title>
     <?php include 'include/scripts.php'; ?>
 </head>
-
 <body>
-    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-        <div class="px-4 py-5 sm:px-6">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">
-                Applicant Information
-            </h3>
-            <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                Student's Personal details and application.
-            </p>
-        </div>
-        <div class="border-t border-gray-200">
-            <dl>
-                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Full name
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        Sandip Sapkota
-                    </dd>
-                </div>
-                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Application for
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        Class 12
-                    </dd>
-                </div>
-                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Email address
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        sandipsapkota9844@gmail.com
-                    </dd>
-                </div>
-                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Interested Faculty
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        Science
-                    </dd>
-                </div>
-                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Their Interests
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis distinctio voluptates perspiciatis beatae architecto! Cumque consequuntur, enim animi dolorem eligendi dolor, quibusdam porro voluptatem consectetur exercitationem maxime culpa? Iste sint dolore ullam cupiditate ut officia perspiciatis unde molestias laudantium vero expedita nemo eos maiores asperiores non, saepe amet, minus quo.
-                    </dd>
-                </div>
-                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                        Attachments
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                        <ul role="list" class="border border-gray-200 rounded-md divide-y divide-gray-200">
-                            <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
-                                <div class="w-0 flex-1 flex items-center">
-                                    <!-- Heroicon name: solid/paper-clip -->
-                                    <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="ml-2 flex-1 w-0 truncate">
-                                        photo.png
-                                    </span>
-                                </div>
-                                <div class="ml-4 flex-shrink-0">
-                                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-                                        Download
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
-                                <div class="w-0 flex-1 flex items-center">
-
-                                    <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="ml-2 flex-1 w-0 truncate">
-                                        certificate.png
-                                    </span>
-                                </div>
-                                <div class="ml-4 flex-shrink-0">
-                                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-                                        Download
-                                    </a>
-                                </div>
-
-                            </li>
-                        </ul>
-
-                    </dd>
+    <?php include 'include/navbar.php'; ?>
+    <div class="flex flex-col">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+               First Name
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+               Last Name
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Father's Name
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Mother's Name
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+               Personal Contact
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Parents Contact
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Class
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Faculty
+              </th>
+            </tr>
+          </thead>
 
 
 
+         
+        
+          <tbody class="bg-white divide-y divide-gray-200">
 
-                </div>
-            </dl>
-        </div>
+
+          <?php
+          include '_dbconnect.php';
+          $selectquery = "SELECT * FROM `data`";
+          $query = mysqli_query($conn, $selectquery);
+         
+         while($result = mysqli_fetch_assoc($query)){
+       ?>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+              <?php echo $result['firstname']; ?>
+
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900"><?php echo $result['lastname']; ?></div>
+               
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-900"><?php echo $result['fathername']; ?></div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-900"><?php echo $result['mothername']; ?></div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-900"><?php echo $result['personalno']; ?></div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-900"><?php echo $result['parentsno']; ?></div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-900"><?php echo $result['class']; ?></div>
+              </td><td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-900"><?php echo $result['faculty']; ?></div>
+              </td>
+            </tr>
+    
+        <?php 
+      
+      }
+          
+          
+          ?>
+
+          </tbody>
+         
+        </table>
+    
+      </div>
     </div>
+  </div>
+</div>
 </body>
-
 </html>
