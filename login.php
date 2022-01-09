@@ -1,3 +1,31 @@
+<?php
+$login = false;
+$showError = false;
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    include '_dbconnect.php';
+    $username = $_POST["username"];
+    $password = $_POST["password"]; 
+    
+     
+    $sql = "Select * from login where username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+    $num = mysqli_num_rows($result);
+    if ($num == 1){
+        $login = true;
+        session_start();
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
+        header("location: dashboard.php");
+
+    } 
+    else{
+        echo "Invalid username or password";
+    }
+}
+    
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +62,7 @@
         <input type="hidden" name="remember" value="true">
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
-            <label for="email-address" class="sr-only">Email address</label>
+            <label for="email-address" class="sr-only">Username</label>
             <input id="username" name="username" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
           </div>
           <div>

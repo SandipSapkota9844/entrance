@@ -1,5 +1,38 @@
+<?php 
+   session_start();
+
+include '_dbconnect.php';
 
 
+if(isset($_POST['submit'])){
+  $firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$fathername = $_POST['fathername'];
+$mothername = $_POST['mothername'];
+$personalno = $_POST['personalno'];
+$parentno = $_POST['parentno'];
+$class = $_POST['class'];
+$faculty = $_POST['faculty'];
+
+
+$query = "INSERT INTO `data` (`sn`, `firstname`, `lastname`, `fathername`, `mothername`, `personalno`, `parentsno`, `class`, `faculty`) values( NULL,'$firstname','$lastname','$fathername','$mothername','$personalno','$parentno','$class','$faculty')";
+$data = mysqli_query($conn,$query);
+if($data){
+  echo "Data Inserted";
+}
+else{
+  echo "Data Not Inserted";
+}
+}
+
+
+
+
+
+
+ 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +47,7 @@
 
 <body>
 <?php include 'include/navbar.php'; ?>
-  <form method="POST" class=" py-5 w-full max-w-fit">
+  <form method="POST" action="?" class=" py-5 w-full max-w-fit">
 
     <div class="flex flex-wrap -mx-mb-6">
       <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -56,7 +89,7 @@
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
         Parent's Mobile Number
       </label>
-      <input name="personalno" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="98XXXXXXXX">
+      <input name="parentno" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="98XXXXXXXX">
     </div>
 
 
@@ -72,8 +105,10 @@
         </label>
         <div class="relative">
           <select name="class" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-            <option>11</option>
-            <option>12</option>
+          <option value="Not-Selected">Select</option>  
+          
+          <option value="11">11</option>
+            <option value="12">12</option>
 
           </select>
           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -88,9 +123,11 @@
           Faculty
         </label>
         <div class="relative">
-          <select name="faculty" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-            <option>Science</option>
-            <option>Management</option>
+          <select name="faculty" name="faculty" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+            
+          <option value="Not-Selected">Select</option>
+          <option value="Science">Science</option>
+            <option value="Management">Management</option>
 
           </select>
           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -101,23 +138,14 @@
         </div>
       </div>
 
-      <div class=" -mx-0 flex justify-center">
-        <div class="mb-3 w-96">
-          <label for="formFile" class="form-label inline-block mb-2 text-gray-700">Photo </label>
-          <input name="photo" class="form-control block w-full px-3 py-1.5  text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="Photo">
-          <label for="formFile" class="form-label inline-block mb-2 text-gray-700">Grade Sheet</label>
-          <input name="gradesheet" class="form-control block w-full px-3 py-1.5  text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="gradesheet">
-          <label for="formFile" class="form-label inline-block mb-2 text-gray-700">Character Certificate</label>
-          <input name="charactercertificate" class="form-control block w-full px-3 py-1.5  text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="certificate">
-        </div>
-        
-    </div>
+      
+    
     
     </div>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" name="submit" type="submit">
+      Submit
+    </button>
     
-    <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
-  Button
-</button>
   
   </form>
 

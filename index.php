@@ -42,13 +42,13 @@
             <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Home </a>
 
-              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About US</a>
+              <a href="about.php" class="font-medium text-gray-500 hover:text-gray-900">About US</a>
 
-              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Registration</a>
+              <a href="form.php" class="font-medium text-gray-500 hover:text-gray-900">Registration</a>
 
            
 
-              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+              <a href="login.php" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
             </div>
           </nav>
         </div>
@@ -82,9 +82,9 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
               <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
 
-              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About US</a>
+              <a href="about.php" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About US</a>
 
-              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Registration</a>
+              <a href="form.php" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Registration</a>
 
               
             </div>
@@ -105,12 +105,12 @@
           </p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+              <a href="form.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                 Registration
               </a>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
+              <a href="login.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                 Login
               </a>
             </div>
