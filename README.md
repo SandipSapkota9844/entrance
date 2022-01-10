@@ -1,0 +1,1 @@
+<h1> Hi This is the simple project of php and my sql database . And Tailwind css(sourcecode copied) is used as frontend</h1>
