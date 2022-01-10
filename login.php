@@ -87,6 +87,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </span>
             Sign in
           </button>
+
+          <button type="submit" name="submit" class="group relative w-full flex justify-center  mt-4 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+              
+            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            Home
+          </button>
         </div>
       </form>
     </div>
