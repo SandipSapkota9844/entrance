@@ -23,8 +23,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     } 
     else{
-        echo '<script>alert("Invalid Username And Password!! Please Try Again!")</script>';
-    }
+ echo '<script>alert("Invalid Username And Password!! Please Try Again!")</script>';
+      }
 }
     
 ?>

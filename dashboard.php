@@ -185,16 +185,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                     <div class="text-sm text-gray-900"><?php echo $result['faculty']; ?></div>
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap">
-                    <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-1 px-3 border-b-4 border-green-700 hover:border-green-500 rounded">
-                      Update
-                    </button>
+                    <!-- <a href="update.php"> <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-1 px-3 border-b-4 border-green-700 hover:border-green-500 rounded">
+                        Update
+                      </button></a> -->
+                      <a href="delete.php?sn=<?php echo $result['sn'];?>"> <button class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-3 border-b-4 border-red-700 hover:border-red-500 rounded">
+                        Delete
+                      </button></a>
 
-                    <button class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-3 border-b-4 border-red-700 hover:border-red-500 rounded">
-                      Delete
-                    </button>
-
-
-                    <!-- <div class="text-sm text-gray-900"><?php echo $result['faculty']; ?></div> -->
                   </td>
                 </tr>
 
