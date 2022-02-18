@@ -1,7 +1,8 @@
 <?php 
    session_start();
-
+include'include/scripts.php';
 include '_dbconnect.php';
+include'include/navbar.php';
 
 
 if(isset($_POST['submit'])){
@@ -42,11 +43,11 @@ else{
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <?php include 'include/scripts.php'; ?>
+
 </head>
 
 <body>
-<?php include 'include/navbar.php'; ?>
+
   <form method="POST" action="?" class=" py-5 w-full max-w-fit">
 
     <div class="flex flex-wrap -mx-mb-6">
